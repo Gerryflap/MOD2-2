@@ -1,4 +1,5 @@
-package week2;
+package week2.hotel;
+
 
 public class Safe {
 	private Password password;

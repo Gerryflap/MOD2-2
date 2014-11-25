@@ -1,4 +1,4 @@
-package hotel;
+package week2.hotel;
 
 /**
  * Hotel guest.

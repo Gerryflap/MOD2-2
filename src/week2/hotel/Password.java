@@ -1,4 +1,4 @@
-package week2;
+package week2.hotel;
 public class Password {
 	public static final String INITIAL = "K0ekjes";
 	private String password;

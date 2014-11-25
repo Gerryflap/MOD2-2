@@ -1,7 +1,8 @@
 package week2.test;
 import org.junit.*;
+
 import static org.junit.Assert.*;
-import week2.Safe;
+import week2.hotel.Safe;
 
 import org.junit.Test;
 

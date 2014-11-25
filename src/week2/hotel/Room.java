@@ -1,4 +1,5 @@
-package hotel;
+package week2.hotel;
+
 
 /**
  * Hotel room with number and possibly a guest.
@@ -10,6 +11,7 @@ public class Room {
 
     private int number;
     private Guest guest;
+    private Safe safe;
 
     // ------------------ Constructor ------------------------
 
@@ -19,6 +21,7 @@ public class Room {
      */
     public Room(int no) {
     	number = no;
+    	this.safe = new Safe("Koekjes");
     }
 
     // ------------------ Queries --------------------------
@@ -50,6 +53,9 @@ public class Room {
      */
     public void setGuest(Guest g) {
     	guest = g;
+    }
+    public Safe getSafe(){
+    	return this.safe;
     }
     public String toString(){
     	return "Room " + this.getNumber();
