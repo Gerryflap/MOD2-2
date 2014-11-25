@@ -134,6 +134,6 @@ public class HotelTest {
         assertEquals("Returned String is not null", true, string != null);
         assertEquals("Returned String contains guest name",
         		true, string.indexOf(GUEST_NAME_1) != -1);
-        System.out.println(string);
+        //System.out.println(string);
     }
 }

@@ -2,8 +2,11 @@ package week2.hotel;
 import java.util.ArrayList;
 
 public class Hotel {
+	//@ private invariant password != null;
 	private Password password;
+	//@ private invariant rooms;
 	private ArrayList<Room> rooms;
+	//@ private invariant hotelName;
 	private String hotelName;
 	
 	public Hotel(String hotelName ,int roomCount, String password){
