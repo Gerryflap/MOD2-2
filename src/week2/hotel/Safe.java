@@ -24,11 +24,11 @@ public class Safe {
 	//@ requires isOpen() == true;
 	//@ ensures isActive() == false;
 	public void deactivate(){
-		if (this.open){
-			this.active = false;
-			this.password = new Password(); 		
-		}
-		assert (isOpen()==true && isActive() == false);  
+		this.active = false;
+		close();
+		this.password = new Password(); 		
+		
+		  
 	}
 	/*@ ensures isActive()?(
 	 getPassword().testWord(password)?

@@ -35,7 +35,7 @@ public class Hotel {
 		Room room = getRoom(guestName);
 		if (room != null){
 			room.getGuest().checkout();
-	    	room.getSafe().open("Koekjes");
+	    	
 	    	room.getSafe().deactivate();
 		}
 		assert getRoom(guestName) == null;
